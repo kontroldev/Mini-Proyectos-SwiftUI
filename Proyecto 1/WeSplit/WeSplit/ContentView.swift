@@ -8,33 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Definimos una lista de nombres de estudiantes
+    let students = ["Harry", "Ron", "Hermione"]
+    
+    // @State permite que SwiftUI redibuje la vista cuando cambie el valor de `selectedStudent`
+    @State private var selectedStudent  = "Harry"
+    
     var body: some View {
-        NavigationStack {  // Creamos un Navgation con un texto, mas abajo definido.
-            Form { // creamos formularios.
-                Section {  // Creamos una sección
-                    Text("Hello, World!")
-                }
-                Section {
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                }
-                Section {
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                    Text("Hello, World!")
-                    Text("Hello, World!")
+        NavigationStack { // Contenedor que permite manejar la navegación dentro de la vista
+            Form { // Formulario que organiza los elementos de manera estándar en iOS
+                Picker("Selected Student", selection: $selectedStudent) {
+                    // `selection: $selectedStudent` enlaza el Picker con la variable @State
+                    ForEach(students, id: \.self) {
+                        Text($0)
+                    }
                 }
             }
-            
-            .navigationTitle("SwiftUI")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Select a Student")
         }
     }
 }
+
 #Preview {
-    ContentView()
+    ContentView() // Activa la vista previa en Xcode sin necesidad de ejecutar la app en un simulador
 }
