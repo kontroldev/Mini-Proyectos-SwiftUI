@@ -8,23 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Definimos una lista de nombres de estudiantes
-    let students = ["Harry", "Ron", "Hermione"]
+    @State private var checkAmount = 0.0 // saldo de la cuenta por defecto.
+    @State private var numberOfPeople = 2 // numero minimo de personas por defecto.
+    @State private var tipPercentage = 20 // el porcentaje por defecto de la propina.
     
-    // @State permite que SwiftUI redibuje la vista cuando cambie el valor de `selectedStudent`
-    @State private var selectedStudent  = "Harry"
+    let tipPercentages = [10, 15, 20, 25, 0] // porcentajes de propina.
     
     var body: some View {
-        NavigationStack { // Contenedor que permite manejar la navegación dentro de la vista
-            Form { // Formulario que organiza los elementos de manera estándar en iOS
-                Picker("Selected Student", selection: $selectedStudent) {
-                    // `selection: $selectedStudent` enlaza el Picker con la variable @State
-                    ForEach(students, id: \.self) {
-                        Text($0)
+        Form {
+            Section {
+                // Campo de texto para ingresar el monto de la cuenta, formateado como moneda.
+                TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                // Se enlaza con `checkAmount` y usa la moneda del sistema por defecto.
+                    .keyboardType(.decimalPad) // con esto forzamos a poner el teclado de numeros
+                
+                Picker("Number of people", selection: $numberOfPeople) {
+                    ForEach(2..<100) {
+                        Text("\($0) people")
                     }
                 }
+                // Muestra la contidad ingresada con el formato de moneda correspondiente.
+                // Esto sirve para visualizar el valor introducido antes de realizar cálculos adicionales.
+                Section {
+                    Text(checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                }
             }
-            .navigationTitle("Select a Student")
         }
     }
 }
