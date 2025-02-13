@@ -17,7 +17,7 @@ A continuación, se muestra una lista de los mini proyectos incluidos en este re
 ---
 
 ### ✨ Sobre el Autor
-Este repositorio ha sido creado por **Raúl Gallego Alonso** como parte de su aprendizaje en SwiftUI y desarrollo iOS.
+Este repositorio ha sido creado por **Raúl Gallego** como parte de su aprendizaje en SwiftUI y desarrollo iOS.
 
 Si tienes preguntas o sugerencias, no dudes en abrir un issue o contribuir al código. ¡Toda ayuda es bienvenida! 
 
