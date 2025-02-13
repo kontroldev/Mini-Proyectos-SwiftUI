@@ -1,82 +1,65 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+# Archivos generados por macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
 
-## Build generated
-build/
-DerivedData/
+# Archivos de Spotlight
+.metadata_never_index
+.noindex
 
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
+# Archivos de la papelera de macOS
+.Trashes
 
-## Other
-*.moved-aside
-*.xccheckout
+# Archivos de cache y logs del sistema
+*.swp
+*.swo
+*.swn
+*.lock
+*.bak
+*.tmp
+
+# Archivos de Xcode
+*.xcuserstate
 *.xcscmblueprint
-
-## Obj-C/Swift specific
+*.xcworkspace/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.mode2v3
+*.xcodeproj/*.perspectivev3
+DerivedData/
 *.hmap
 *.ipa
-*.dSYM.zip
-*.dSYM
+*.dSYM/
+*.xcassets
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
+# Archivos de dependencias
+Pods/
+Carthage/
+Carthage/Checkouts/
+Carthage/Build/
+Carthage/Checkouts/
+Carthage/Build/
+SwiftPackages/
+SPM/
 .build/
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+# Archivos de Swift Package Manager
+Package.resolved
 
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
-# Accio dependency management
-Dependencies/
-.accio/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
+# Archivos de Fastlane
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+fastlane/screenshots/
+fastlane/test_output/
+fastlane/.env
 
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
+# Archivos de Playgrounds
+timeline.xctimeline
 
-iOSInjectionProject/
+# Archivos de Git
+.git/
+.gitignore
