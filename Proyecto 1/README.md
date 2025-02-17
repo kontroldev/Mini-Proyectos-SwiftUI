@@ -8,6 +8,11 @@ Este proyecto es una implementación de la aplicación **WeSplit**, desarrollada
 - Elegir un porcentaje de propina (0% - 100%).
 - Calcular automáticamente el monto total de la cuenta y la cantidad a pagar por persona.
 
+<p align="center">
+    <img src="WeSplit_Original.png" alt="WeSplit Original" width="200">
+</p>
+
+
 ## 📁 Carpeta de Ejercicio
 En la estructura del proyecto hay una carpeta que contiene un **ejercicio adicional**, donde se han realizado las siguientes mejoras:
 
@@ -15,6 +20,11 @@ En la estructura del proyecto hay una carpeta que contiene un **ejercicio adicio
 ✅ **Agregar una nueva sección** que muestra el **total de la cuenta** (cantidad original + propina, sin dividir por el número de personas).
 ✅ **Modificar el `Picker` de porcentaje de propina** para abrir en una nueva pantalla en lugar de usar botones segmentados.
 ✅ **Ampliar el rango de opciones de propina** desde `0%` hasta `100%`.
+
+<p align="center">
+    <img src="WeSplit_ejercicio.png" alt="WeSplit Original" width="200">
+</p>
+
 
 Este ejercicio permite mejorar la usabilidad y funcionalidad de la app, haciéndola más flexible para diferentes escenarios de uso.
 
