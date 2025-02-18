@@ -33,3 +33,11 @@ El archivo principal `ContentView.swift` incluye:
       let valueInSeconds = input * conversionFactors[inputUnit]
       return valueInSeconds / conversionFactors[outputUnit]
   }
+
+
+
+<p align="center">
+  <img src="Challenger1.png" alt="Captura de la aplicación" width="300">
+</p>
+
+Esta aplicación es un conversor de unidades de tiempo construido con SwiftUI. Permite convertir entre segundos, minutos, horas y días...

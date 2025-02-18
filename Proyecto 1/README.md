@@ -9,7 +9,7 @@ Este proyecto es una implementación de la aplicación **WeSplit**, desarrollada
 - Calcular automáticamente el monto total de la cuenta y la cantidad a pagar por persona.
 
 <p align="center">
-    <img src="WeSplit_Original.png" alt="WeSplit Original" width="200">
+    <img src="WeSplit_Original.png" alt="WeSplit Original" width="300">
 </p>
 
 
@@ -22,7 +22,7 @@ En la estructura del proyecto hay una carpeta que contiene un **ejercicio adicio
 ✅ **Ampliar el rango de opciones de propina** desde `0%` hasta `100%`.
 
 <p align="center">
-    <img src="WeSplit_ejercicio.png" alt="WeSplit Ejercicio" width="200">
+    <img src="WeSplit_ejercicio.png" alt="WeSplit Ejercicio" width="300">
 </p>
 
 
