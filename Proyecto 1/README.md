@@ -22,7 +22,7 @@ En la estructura del proyecto hay una carpeta que contiene un **ejercicio adicio
 ✅ **Ampliar el rango de opciones de propina** desde `0%` hasta `100%`.
 
 <p align="center">
-    <img src="WeSplit_ejercicio.png" alt="WeSplit Original" width="200">
+    <img src="WeSplit_ejercicio.png" alt="WeSplit Ejercicio" width="200">
 </p>
 
 
