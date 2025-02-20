@@ -14,6 +14,7 @@
 		B324E5F32D675C7B00FD7CE8 /* UsingStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324E5F22D675C7B00FD7CE8 /* UsingStacks.swift */; };
 		B324E5F52D67632900FD7CE8 /* ColorsFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324E5F42D67632900FD7CE8 /* ColorsFrames.swift */; };
 		B324E5F72D67C62E00FD7CE8 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324E5F62D67C62E00FD7CE8 /* Gradients.swift */; };
+		B324E5F92D67D0AA00FD7CE8 /* ButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324E5F82D67D0AA00FD7CE8 /* ButtonImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B324E5F22D675C7B00FD7CE8 /* UsingStacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingStacks.swift; sourceTree = "<group>"; };
 		B324E5F42D67632900FD7CE8 /* ColorsFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsFrames.swift; sourceTree = "<group>"; };
 		B324E5F62D67C62E00FD7CE8 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		B324E5F82D67D0AA00FD7CE8 /* ButtonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImage.swift; sourceTree = "<group>"; };
 		B359F1AF2D6685F700898B03 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 				B324E5F22D675C7B00FD7CE8 /* UsingStacks.swift */,
 				B324E5F42D67632900FD7CE8 /* ColorsFrames.swift */,
 				B324E5F62D67C62E00FD7CE8 /* Gradients.swift */,
+				B324E5F82D67D0AA00FD7CE8 /* ButtonImage.swift */,
 			);
 			path = GuessTheFlag;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B324E5EE2D675C0E00FD7CE8 /* ContentView.swift in Sources */,
+				B324E5F92D67D0AA00FD7CE8 /* ButtonImage.swift in Sources */,
 				B324E5F72D67C62E00FD7CE8 /* Gradients.swift in Sources */,
 				B324E5F52D67632900FD7CE8 /* ColorsFrames.swift in Sources */,
 				B324E5EF2D675C0E00FD7CE8 /* GuessTheFlagApp.swift in Sources */,
