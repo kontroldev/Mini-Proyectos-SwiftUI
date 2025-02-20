@@ -12,7 +12,7 @@ Icon?
 # Archivos de la papelera de macOS
 .Trashes
 
-# Archivos de cache y logs del sistema
+# Archivos de caché y logs del sistema
 *.swp
 *.swo
 *.swn
@@ -24,12 +24,8 @@ Icon?
 *.xcuserstate
 *.xcscmblueprint
 *.xcworkspace/
-*.xcodeproj/project.xcworkspace/
-*.xcodeproj/xcuserdata/
-*.xcodeproj/*.pbxuser
-*.xcodeproj/*.mode1v3
-*.xcodeproj/*.mode2v3
-*.xcodeproj/*.perspectivev3
+*.xcodeproj/
+*.xcodeproj/*    # Ignora todo el contenido dentro de los .xcodeproj
 DerivedData/
 *.hmap
 *.ipa
@@ -39,8 +35,6 @@ DerivedData/
 # Archivos de dependencias
 Pods/
 Carthage/
-Carthage/Checkouts/
-Carthage/Build/
 Carthage/Checkouts/
 Carthage/Build/
 SwiftPackages/
