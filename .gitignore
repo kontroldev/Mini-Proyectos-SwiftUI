@@ -1,60 +1,58 @@
-### 📌 Archivos generados por macOS
+# === macOS ===
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon?
-._*
-
-### 📌 Archivos de Spotlight
-.metadata_never_index
-.noindex
-
-### 📌 Archivos de la papelera de macOS
+.Spotlight-V100
 .Trashes
+._*
+.fseventsd
+.com.apple.timemachine.donotpresent
 
-### 📌 Archivos de caché y logs del sistema
-*.swp
-*.swo
-*.swn
-*.lock
-*.bak
-*.tmp
-
-### 📌 Archivos de Xcode (Ignorar archivos temporales pero NO el proyecto)
-*.xcuserstate
-*.xcscmblueprint
-*.xcworkspace/     # Espacios de trabajo de Xcode (se regeneran)
-xcuserdata/        # Configuración de usuario en Xcode
-xcshareddata/      # Datos compartidos en Xcode
-DerivedData/       # Carpeta de compilación temporal
+# === Xcode ===
+DerivedData/
+build/
 *.hmap
 *.ipa
-*.dSYM/            # Simbología de depuración
-build/
+*.dSYM/
+*.xcdebugger/
+*.crash
 
-### 📌 No ignorar .xcodeproj, pero sí sus archivos de usuario
-!*.xcodeproj/      # Mantiene el proyecto en el repo
-*.xcodeproj/project.xcworkspace/  # Ignorar el espacio de trabajo dentro del proyecto
-*.xcodeproj/xcuserdata/            # Configuraciones de usuario
+# === Xcode User Data (Datos específicos del usuario) ===
+xcuserdata/
+xcshareddata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
 
-### 📌 Archivos de dependencias
-Pods/
-Carthage/
-Carthage/Checkouts/
-Carthage/Build/
-SwiftPackages/
-SPM/
+# === Xcode Workspaces (Espacios de trabajo) ===
+*.xcworkspace/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# === Swift Package Manager (SPM) ===
+.swiftpm/
 .build/
-
-### 📌 Archivos de Swift Package Manager
 Package.resolved
 
-### 📌 Archivos de Fastlane (automatización de releases)
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/
-fastlane/test_output/
-fastlane/.env
+# === CocoaPods ===
+Pods/
+*.podspec.lock
 
-### 📌 Archivos de Playgrounds
+# === Carthage ===
+Carthage/Checkouts/
+Carthage/Build/
+
+# === Archivos temporales de compilación ===
+*.o
+*.d
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
+# === Ignorar archivos generados en Playgrounds ===
 timeline.xctimeline
+
+# === Ignorar archivos de assets y previsualización ===
+*.xcassets/
+*/Preview\ Content/
