@@ -1,18 +1,18 @@
-# Archivos generados por macOS
+### 📌 Archivos generados por macOS
 .DS_Store
 .AppleDouble
 .LSOverride
 Icon?
 ._*
 
-# Archivos de Spotlight
+### 📌 Archivos de Spotlight
 .metadata_never_index
 .noindex
 
-# Archivos de la papelera de macOS
+### 📌 Archivos de la papelera de macOS
 .Trashes
 
-# Archivos de caché y logs del sistema
+### 📌 Archivos de caché y logs del sistema
 *.swp
 *.swo
 *.swn
@@ -20,19 +20,24 @@ Icon?
 *.bak
 *.tmp
 
-# Archivos de Xcode
+### 📌 Archivos de Xcode (Ignorar archivos temporales pero NO el proyecto)
 *.xcuserstate
 *.xcscmblueprint
-*.xcworkspace/
-*.xcodeproj/
-*.xcodeproj/*    # Ignora todo el contenido dentro de los .xcodeproj
-DerivedData/
+*.xcworkspace/     # Espacios de trabajo de Xcode (se regeneran)
+xcuserdata/        # Configuración de usuario en Xcode
+xcshareddata/      # Datos compartidos en Xcode
+DerivedData/       # Carpeta de compilación temporal
 *.hmap
 *.ipa
-*.dSYM/
-*.xcassets
+*.dSYM/            # Simbología de depuración
+build/
 
-# Archivos de dependencias
+### 📌 No ignorar .xcodeproj, pero sí sus archivos de usuario
+!*.xcodeproj/      # Mantiene el proyecto en el repo
+*.xcodeproj/project.xcworkspace/  # Ignorar el espacio de trabajo dentro del proyecto
+*.xcodeproj/xcuserdata/            # Configuraciones de usuario
+
+### 📌 Archivos de dependencias
 Pods/
 Carthage/
 Carthage/Checkouts/
@@ -41,19 +46,15 @@ SwiftPackages/
 SPM/
 .build/
 
-# Archivos de Swift Package Manager
+### 📌 Archivos de Swift Package Manager
 Package.resolved
 
-# Archivos de Fastlane
+### 📌 Archivos de Fastlane (automatización de releases)
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/
 fastlane/test_output/
 fastlane/.env
 
-# Archivos de Playgrounds
+### 📌 Archivos de Playgrounds
 timeline.xctimeline
-
-# Archivos de Git
-.git/
-.gitignore
