@@ -45,28 +45,58 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     
+    
     var body: some View {
         ZStack {
-            Color.blue
-                .ignoresSafeArea()
+            RadialGradient(stops: [
+                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
+                .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3)
+            ], center: .top, startRadius: 200, endRadius: 700)
+            .ignoresSafeArea()
             
-            VStack(spacing: 30) {
-                VStack {
-                    Text("Tap the flog of")
-                        .foregroundStyle(.white)
-                    
-                    Text(countries[correctAnswer])
-                        .foregroundStyle(.white)
-                }
-                ForEach(0..<3) { number in
-                    Button {
-                        // Llama a la función flagTapped pasando el índice de la bandera pulsada por el usuario
-                        flagTapped(number)
-                    } label: {
-                        Image(countries[number])
+            VStack {
+                Spacer()
+                
+                Text("Guess the Flag")
+                    .font(.largeTitle.bold())
+                    .foregroundStyle(.white)
+                
+                VStack(spacing: 15 ) {
+                    VStack {
+                        Text("Tap the flog of")
+                            .foregroundStyle(.secondary)
+                            .font(.subheadline.weight(.heavy)) // Aplica un texto pequeño con peso fuerte (heavy), ideal para subtítulos destacados.
+                        
+                        Text(countries[correctAnswer])
+                            .foregroundStyle(.white)
+                            .font(.largeTitle.weight(.semibold)) // Texto grande para encabezado, con peso medio-alto (semibold) para buena legibilidad.
+                    }
+                    ForEach(0..<3) { number in
+                        Button {
+                            // Llama a la función flagTapped pasando el índice de la bandera pulsada por el usuario
+                            flagTapped(number)
+                        } label: {
+                            Image(countries[number])
+                                .clipShape(.capsule)
+                                .shadow(radius: 5)
+                        }
                     }
                 }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 20)
+                .background(.regularMaterial)
+                .clipShape(.rect(cornerRadius: 20))
+                
+                Spacer()
+                Spacer()
+                
+                Text("Score: ???")
+                    .foregroundStyle(.white)
+                    .font(.title.bold())
+                
+                Spacer()
             }
+            .padding()
         }
         // .alert muestra una alerta emergente en pantalla cuando se activa showingScore = true.
         // scoreTitle será el título de la alerta (Correct! o Wrong!).
