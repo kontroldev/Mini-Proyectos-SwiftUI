@@ -44,6 +44,9 @@ struct ContentView: View {
     //Esto es una variable de estado (con @State), que te servirá para controlar si debes mostrar una alerta o algún tipo de respuesta visual cuando el usuario pulse una bandera.
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var score = 0
+    @State private var scoreMessage = ""
+    @State private var questionCount = 0
     
     
     var body: some View {
@@ -90,7 +93,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: ???")
+                Text("Score: \(score)")
                     .foregroundStyle(.white)
                     .font(.title.bold())
                 
@@ -104,7 +107,7 @@ struct ContentView: View {
         .alert(scoreTitle, isPresented: $showingScore) {
             Button("continue", action: askQuestion)
         } message: {
-            Text("Your score is ???")
+            Text(scoreMessage)
         }
     }
     // Esta función recibe un parámetro llamado number, que representa el índice (posición) de la bandera que el usuario ha pulsado (puede ser 0, 1 o 2).
@@ -113,8 +116,11 @@ struct ContentView: View {
         // Aquí estás comprobando si el índice (number) que ha pulsado el usuario coincide con el índice de la bandera correcta (correctAnswer).
         if number == correctAnswer {
             scoreTitle = "Correct!"
+            score += 1 // Aqui actualizas la puntuacion
+            scoreMessage = "Great job!"
         } else {
             scoreTitle = "Wrong!"
+            scoreMessage = "That was the flag of \(countries[number])"
         }
         // Esto actualiza dinámicamente el contenido del mensaje que se mostrará al usuario después.
         showingScore = true
