@@ -32,14 +32,11 @@ En esta tercera parte hemos añadido mejoras visuales y estructurales para enriq
 - Añadido marcador dinámico en pantalla: `"Score: \(score)"`.
 
 ### 📷 Capturas del resultado final:
-<p align="center">
-  <img src="GuessTheFlag_1.png" alt="Guess The Flag - Pantalla principal" width="300"/>
-  <img src="GuessTheFlag_2.png" alt="Guess The Flag - Botones estilizados" width="300"/>
-  <img src="GuessTheFlag_3.png" alt="Guess The Flag - Alerta de resultado" width="300"/>
-</p>
+<img width="300"  alt="GuessTheFlag_1" src="https://github.com/user-attachments/assets/0ad02b3f-f51b-4179-b80d-d8e7660b495d" /> 
+<img width="300"  alt="GuessTheFlag_2" src="https://github.com/user-attachments/assets/66a46752-5df6-4cf4-82ab-552647f9fbeb" />
+<img width="300"  alt="GuessTheFlag_3" src="https://github.com/user-attachments/assets/f4e52b87-849c-4b6b-a308-9113ed50d6a6" />
 
-*(Reemplaza las rutas de las imágenes con las tuyas una vez las subas al repositorio)*
-
+ 
 ---
 
 ## 📌 Tecnologías y conceptos utilizados
