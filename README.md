@@ -9,7 +9,7 @@ Cada mini proyecto tiene su propia carpeta y un archivo `README.md` con una brev
 A continuación, se muestra una lista de los mini proyectos incluidos en este repositorio:
 
 1. [WeSplit](https://github.com/kontroldev/Mini-Proyectos-SwiftUI/tree/main/Proyecto%201) - Aplicación para dividir cuentas de restaurante.
-2. [Proyecto 2](Proyecto_2/README.md) - Descripción breve del proyecto.
+2. [Guess The Flag](Proyecto%202/README.md) – Juego interactivo para aprender banderas del mundo usando SwiftUI.
 3. [Proyecto 3](Proyecto_3/README.md) - Descripción breve del proyecto.
 
 *(Agrega más proyectos a medida que los completes, actualizando este índice).* 
