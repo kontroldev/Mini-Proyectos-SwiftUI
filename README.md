@@ -12,7 +12,7 @@ A continuación, se muestra una lista de los mini proyectos incluidos en este re
 2. [Guess The Flag](Proyecto%202/README.md) – Juego interactivo para aprender banderas del mundo usando SwiftUI.
 3. [Proyecto 3](Proyecto_3/README.md) - Descripción breve del proyecto.
 
-*(Agrega más proyectos a medida que los completes, actualizando este índice).* 
+*(Agregaremos más proyectos a medida que los vayamos completando).* 
 
 ---
 
