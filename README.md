@@ -1,4 +1,4 @@
-# Mini Proyectos SwiftUI
+# <img src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png" alt="SwiftUI Logo" width="40" height="40" style="vertical-align: middle;"/> Mini Proyectos SwiftUI
 
 Repositorio que contiene una colección de **mini proyectos desarrollados en SwiftUI**.
 
