@@ -31,3 +31,4 @@ struct Modificadores: View {
 #Preview {
     Modificadores()
 }
+ 
