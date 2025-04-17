@@ -37,7 +37,3 @@ struct ModificadoresCondicionales: View {
 #Preview {
     ModificadoresCondicionales()
 }
-
-#Preview {
-    ModificadoresCondicionales()
-}

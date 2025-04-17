@@ -9,14 +9,14 @@ import SwiftUI
 
 struct Modificadores: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
             .padding()
             .background(.red)
             .padding()
             .background(.blue)
             .padding()
             .background(.green)
-            .padding()
+            .padding() 
             .background(.yellow)
         
         /// El orden de los modificadores es importante en SwiftUI.
